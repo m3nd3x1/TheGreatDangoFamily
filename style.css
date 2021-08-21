@@ -1,0 +1,9 @@
+#game {
+    border: solid 1px;
+}
+
+.hidden {
+    position: fixed;
+    left: -1000px;
+    height: -1000px;
+}
