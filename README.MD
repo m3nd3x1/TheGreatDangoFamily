@@ -1,6 +1,6 @@
 # The Great Dango Family
 ​
-One Paragraph of project description goes here
+Dango (団子) is a Japanese dumpling made from rice flour mixed with uruchi rice flour and glutinous rice flour. The objective of my game is just to dodge.
 ​
 ## Getting Started
 ​
@@ -8,12 +8,6 @@ These instructions will get you a copy of the project up and running on your loc
 ​
 ### Prerequisites
 Internet
-​
-```
-Give examples
-```
-​
-End with an example of getting some data out of the system or using it for a little demo
 ​
 ## Running the tests
 ​
