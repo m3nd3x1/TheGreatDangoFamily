@@ -17,7 +17,7 @@
         }
     };
 
-    class dangoBlue {
+    class dangoBlue2 {
         constructor(x, y, speed) {
             x = x || Math.floor(Math.random() * (455 + 1));
             y = y || 0;
@@ -32,7 +32,7 @@
         x: 200,
         y: 450,
         render: function() {
-            ctx.drawImage(dango2, this.x, this.y, 50, 50);
+            ctx.drawImage(dangoPinkImg, this.x, this.y, 50, 50);
         },
         detectHits: function() {
             for (let i = 0; i < don.length; i++) {
@@ -56,10 +56,10 @@
         }
     };
 
-    let dango1 = {
+    let dangoBlue = {
         render: function() {
             for (let i = 0; i < don.length; i++) {
-                ctx.drawImage(dango1, don[i].x, don[i].y, 50, 50);
+                ctx.drawImage(dangoBlueImg, don[i].x, don[i].y, 50, 50);
             }
         },
         drop: function() {
@@ -121,16 +121,16 @@
     function gameLoop() {
         if (!lost) {
             c.width = c.width;
-            dango1.render();
-            dango2.render();
+            dangoBlue2.render();
+            dangoPink.render();
             if ((Math.floor(Math.random() * (12)) + 1) == 1) {
-                don.push(new Donald());
+                don.push(new dangoBlue());
             }
-            dango1.drop();
-            dango2.detectHits();
+            dangoBlue2.drop();
+            dangoPink.detectHits();
             let now = performance.now();
             let delta = now - then;
-            dango2.move(delta / 1000);
+            dangoPink.move(delta / 1000);
             then = now;
             ctx.fillStyle = "black";
             ctx.fillText("Dangos dodged: " + score, 5, 10);
