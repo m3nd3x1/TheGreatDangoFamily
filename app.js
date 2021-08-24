@@ -17,7 +17,7 @@
         }
     };
 
-    class Donald {
+    class dangoBlue {
         constructor(x, y, speed) {
             x = x || Math.floor(Math.random() * (455 + 1));
             y = y || 0;
@@ -28,11 +28,11 @@
         }
     }
 
-    let obama = {
+    let dangoPink = {
         x: 200,
         y: 450,
         render: function() {
-            ctx.drawImage(obamaImage, this.x, this.y, 50, 50);
+            ctx.drawImage(dango2, this.x, this.y, 50, 50);
         },
         detectHits: function() {
             for (let i = 0; i < don.length; i++) {
@@ -56,10 +56,10 @@
         }
     };
 
-    let trump = {
+    let dango1 = {
         render: function() {
             for (let i = 0; i < don.length; i++) {
-                ctx.drawImage(trumpImage, don[i].x, don[i].y, 50, 50);
+                ctx.drawImage(dango1, don[i].x, don[i].y, 50, 50);
             }
         },
         drop: function() {
@@ -121,16 +121,16 @@
     function gameLoop() {
         if (!lost) {
             c.width = c.width;
-            trump.render();
-            obama.render();
+            dango1.render();
+            dango2.render();
             if ((Math.floor(Math.random() * (12)) + 1) == 1) {
                 don.push(new Donald());
             }
-            trump.drop();
-            obama.detectHits();
+            dango1.drop();
+            dango2.detectHits();
             let now = performance.now();
             let delta = now - then;
-            obama.move(delta / 1000);
+            dango2.move(delta / 1000);
             then = now;
             ctx.fillStyle = "black";
             ctx.fillText("Dangos dodged: " + score, 5, 10);
