@@ -17,7 +17,7 @@
         }
     };
 
-    class dangoBlue2 {
+    class dangoBlue {
         constructor(x, y, speed) {
             x = x || Math.floor(Math.random() * (455 + 1));
             y = y || 0;
@@ -56,7 +56,7 @@
         }
     };
 
-    let dangoBlue = {
+    let dangoBlue2 = {
         render: function() {
             for (let i = 0; i < don.length; i++) {
                 ctx.drawImage(dangoBlueImg, don[i].x, don[i].y, 50, 50);
