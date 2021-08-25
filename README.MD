@@ -3,7 +3,7 @@
 Dango (団子) is a Japanese dumpling made from rice flour mixed with uruchi rice flour and glutinous rice flour. The objective of my game is just to dodge.
 ​
 ## Getting Started
-​Download zip folders
+https://m3nd3x1.github.io/TheGreatDangoFamily/
 
 ​
 ### Prerequisites
