@@ -6,7 +6,7 @@
         keysDown;
 
         const PLAY_AGAIN = {
-        x: 220,
+        x: 325,
         y: 10,
         width: 60,
         height: 20,
@@ -135,7 +135,7 @@
             then = now;
             ctx.fillStyle = "black";
             ctx.fillText("Dangos dodged: " + score, 5, 10);
-            ctx.fillText(fpsCounter() + " FPS", 465, 10);
+            ctx.fillText(fpsCounter() + " FPS", 650, 10);
             window.requestAnimationFrame(gameLoop);
         } else {
             if (localStorage.highScore == undefined)
@@ -145,11 +145,11 @@
             c.width = c.width;
             ctx.fillStyle = "red";
             ctx.font = "40px sans-serif";
-            ctx.fillText("Game over!", 140, 200);
+            ctx.fillText("Game over!", 250, 200);
 
             ctx.fillStyle = "black";
             ctx.font = "36px sans-serif";
-            ctx.fillText("Dangos dodged: " + score, 100, 240);
+            ctx.fillText("Dangos dodged: " + score, 200, 240);
 
             ctx.strokeRect(PLAY_AGAIN.x, PLAY_AGAIN.y, PLAY_AGAIN.width, PLAY_AGAIN.height);
 
