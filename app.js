@@ -5,7 +5,7 @@
         score,
         keysDown;
 
-    const PLAY_AGAIN = {
+        const PLAY_AGAIN = {
         x: 220,
         y: 10,
         width: 60,
@@ -51,7 +51,7 @@
             if (37 in keysDown && this.x > -5) {
                 this.x -= 240 * m;
             }
-            if (39 in keysDown && this.x < 455) {
+            if (39 in keysDown && this.x < 700) {
                 this.x += 240 * m;
             }
         }
@@ -60,7 +60,7 @@
     let dangoBlue2 = {
         render: function() {
             for (let i = 0; i < don.length; i++) {
-                ctx.drawImage(dangoBlueImg, don[i].x, don[i].y, 50, 50);
+                ctx.drawImage(dangoBlueImg, don[i].x, don[i].y, 40, 40);
             }
         },
         drop: function() {
@@ -76,8 +76,8 @@
 
     function init() {
         c = document.getElementById("game");
-        c.width = 650;
-        c.height = 650;
+        c.width = 700;
+        c.height = 500;
         ctx = c.getContext("2d");
         then = performance.now();
         lost = false;
