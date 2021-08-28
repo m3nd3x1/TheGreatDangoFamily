@@ -16,7 +16,7 @@
             }
         }
     };
-
+//Falling object
     class dangoBlue {
         constructor(x, y, speed) {
             x = x || Math.floor(Math.random() * (455 + 1));
@@ -27,7 +27,7 @@
             this.speed = speed;
         }
     }
-
+//Object trying to avoid blue
     let dangoPink = {
         x: 200,
         y: 450,
@@ -46,6 +46,7 @@
                 }
             }
         },
+    
         move: function(m) {
             if (37 in keysDown && this.x > -5) {
                 this.x -= 240 * m;
@@ -75,8 +76,8 @@
 
     function init() {
         c = document.getElementById("game");
-        c.width = 500;
-        c.height = 500;
+        c.width = 650;
+        c.height = 650;
         ctx = c.getContext("2d");
         then = performance.now();
         lost = false;

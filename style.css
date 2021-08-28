@@ -3,7 +3,7 @@
 }
 
 .hidden {
-    position: fixed;
+    position: unset;
     left: -1000px;
     height: -1000px;
 }
